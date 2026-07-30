@@ -27,3 +27,18 @@ Created documentation for:
 - Firewall Strategy
 - Remote Access
 - Network Security
+
+## Phase 09
+
+Designed the Security Operations Center.
+
+Created documentation for:
+
+- SOC Overview
+- Asset Classification
+- Log Sources
+- Monitoring Strategy
+- Alert Priorities
+- Detection Use Cases
+- SOC Workflow
+- Key Metrics
