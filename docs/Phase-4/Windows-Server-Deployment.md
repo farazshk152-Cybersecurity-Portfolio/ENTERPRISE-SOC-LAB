@@ -125,3 +125,94 @@ Hostname : DC01
 
 the server restart was completed successfully and the new hostname was verified in server manager.
 
+---
+
+# Time Zone Configuration
+
+## Selected Time Zone
+
+UTC +05:30
+
+Chennai, Kolkata, Mumbai, New Delhi
+
+## Reason
+
+Correct timestamps are essential for:
+
+- Event Log Analysis
+- SIEM Correlation
+- Incident Response
+- Threat Hunting
+
+---
+
+# Static IP Configuration
+
+## Objective
+
+Configure a static IPv4 address for the Domain Controller.
+
+## Why Static IP?
+
+A Domain Controller must always be reachable at the same IP address because:
+
+- Active Directory depends on DNS.
+- Client systems locate domain services through DNS.
+- SIEM agents require consistent connectivity.
+- Group Policy processing relies on reliable communication.
+- Stable IPs simplify troubleshooting and incident response.
+
+## Planned Enterprise Addressing
+
+| Host | Planned IP |
+|------|------------|
+| DC01 | 192.168.100.10 |
+| CLIENT01 | 192.168.100.20 |
+| WAZUH | 192.168.100.30 |
+| KALI | 192.168.100.40 |
+
+> During the initial deployment, the VM remains on VirtualBox NAT. It will later be migrated to an isolated Internal Network (`SOC-LAB`) using the addressing scheme above.
+
+---
+
+# Network Configuration Discovery
+
+## Objective
+
+Identify the current DHCP configuration before assigning a static IP address.
+
+## Commands Used
+
+```cmd
+ipconfig /all
+```
+
+## Purpose
+
+The output will be used to identify:
+
+- Current IPv4 Address
+- Subnet Mask
+- Default Gateway
+- DNS Server
+
+This information ensures the static IP configuration remains compatible with the current VirtualBox NAT network during the initial deployment phase.
+
+---
+
+# Network Adapter Configuration
+
+## Adapter Name
+
+Enterprise-LAN
+
+## Reason
+
+Network adapters should have descriptive names instead of generic labels such as "Ethernet".
+
+Benefits:
+
+- Easier troubleshooting
+- Better documentation
+- Consistent enterprise naming
+- Simplified network administration
