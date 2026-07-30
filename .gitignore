@@ -1,0 +1,60 @@
+# Virtual Machines
+Virtual-machines/
+virtual-machines/
+
+# Downloads
+Downloads/
+
+# VirtualBox files
+*.vdi
+*.vbox
+*.vbox-prev
+
+# Logs
+*.log
+
+# ISO images
+*.iso
+
+# Windows installers
+*.exe
+
+# ==========================
+# Enterprise SOC Lab
+# ==========================
+
+# Virtual machines
+Virtual-machines/
+virtual-machines/
+
+# ISO images
+*.iso
+
+# VirtualBox
+*.vdi
+*.vbox
+*.vbox-prev
+*.vbox-tmp
+
+# Installers
+*.exe
+*.msi
+
+# Archives
+*.zip
+*.7z
+*.rar
+
+# Logs
+*.log
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# VS Code
+.vscode/
+
+# Temporary files
+*.tmp
+*.bak
