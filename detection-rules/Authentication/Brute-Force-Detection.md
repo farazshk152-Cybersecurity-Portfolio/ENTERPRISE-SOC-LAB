@@ -9,7 +9,6 @@ Detect repeated failed login attempts that may indicate password guessing or bru
 ## MITRE ATT&CK
 
 Technique: T1110 – Brute Force
-
 ---
 
 ## Windows Event IDs
