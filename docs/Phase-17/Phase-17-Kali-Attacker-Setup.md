@@ -330,4 +330,305 @@ The attacker workstation is now ready to perform controlled security testing aga
 * [x] Windows SMB shares verified
 * [x] Security baseline established
 
+---
+
+## 10. Endpoint Security Telemetry Evidence
+
+Phase 17 also established the endpoint telemetry baseline required for subsequent SOC monitoring and SIEM integration.
+
+### Sysmon Configuration
+
+The Windows endpoint Sysmon configuration was backed up, applied, and verified.
+
+![Sysmon configuration backup](../../screenshots/Phase-17/08-sysmon-config-backup.png)
+
+![Sysmon configuration applied](../../screenshots/Phase-17/09-sysmon-configuration-applied.png)
+
+![Sysmon active configuration](../../screenshots/Phase-17/10-sysmon-active-configuration.png)
+
+### Sysmon Network and File Telemetry
+
+Sysmon network connection and file creation telemetry were validated on WIN11-CLIENT01.
+
+![Sysmon network connection](../../screenshots/Phase-17/11-sysmon-network-connect.png)
+
+![Sysmon file creation](../../screenshots/Phase-17/12-sysmon-file-create.png)
+
+### Sysmon DNS Telemetry
+
+DNS query telemetry was validated through Sysmon.
+
+![Sysmon DNS query](../../screenshots/Phase-17/13-sysmon-dns-query.png)
+
+### Windows Security Telemetry
+
+Windows Security event telemetry was validated for successful authentication, failed authentication, and process creation.
+
+![Windows Security Event ID 4624](../../screenshots/Phase-17/14-windows-security-4624.png)
+
+![Windows Security Event ID 4625](../../screenshots/Phase-17/15-security-4625.png)
+
+![Windows Security Event ID 4688](../../screenshots/Phase-17/16-security-4688.png)
+
+### PowerShell Telemetry
+
+PowerShell Script Block Logging telemetry was validated through Event ID 4104.
+
+![PowerShell Event ID 4104](../../screenshots/Phase-17/17-powershell-4104.png)
+
+### Telemetry Readiness
+
+The endpoint now provides the local security telemetry required for centralized SOC monitoring.
+
+The validated telemetry sources include:
+
+- Sysmon process creation
+- Sysmon network connections
+- Sysmon file creation
+- Sysmon DNS queries
+- Windows Security authentication events
+- Windows Security process creation events
+- PowerShell Script Block Logging
+
+These local telemetry sources establish the endpoint-side foundation for the centralized SIEM deployment planned for Phase 18.---
+
+## 10. Endpoint Security Telemetry Evidence
+
+Phase 17 also established the endpoint telemetry baseline required for subsequent SOC monitoring and SIEM integration.
+
+### Sysmon Configuration
+
+The Windows endpoint Sysmon configuration was backed up, applied, and verified.
+
+![Sysmon configuration backup](../../screenshots/Phase-17/08-sysmon-config-backup.png)
+
+![Sysmon configuration applied](../../screenshots/Phase-17/09-sysmon-configuration-applied.png)
+
+![Sysmon active configuration](../../screenshots/Phase-17/10-sysmon-active-configuration.png)
+
+### Sysmon Network and File Telemetry
+
+Sysmon network connection and file creation telemetry were validated on WIN11-CLIENT01.
+
+![Sysmon network connection](../../screenshots/Phase-17/11-sysmon-network-connect.png)
+
+![Sysmon file creation](../../screenshots/Phase-17/12-sysmon-file-create.png)
+
+### Sysmon DNS Telemetry
+
+DNS query telemetry was validated through Sysmon.
+
+![Sysmon DNS query](../../screenshots/Phase-17/13-sysmon-dns-query.png)
+
+### Windows Security Telemetry
+
+Windows Security event telemetry was validated for successful authentication, failed authentication, and process creation.
+
+![Windows Security Event ID 4624](../../screenshots/Phase-17/14-windows-security-4624.png)
+
+![Windows Security Event ID 4625](../../screenshots/Phase-17/15-security-4625.png)
+
+![Windows Security Event ID 4688](../../screenshots/Phase-17/16-security-4688.png)
+
+### PowerShell Telemetry
+
+PowerShell Script Block Logging telemetry was validated through Event ID 4104.
+
+![PowerShell Event ID 4104](../../screenshots/Phase-17/17-powershell-4104.png)
+
+### Telemetry Readiness
+
+The endpoint now provides the local security telemetry required for centralized SOC monitoring.
+
+The validated telemetry sources include:
+
+- Sysmon process creation
+- Sysmon network connections
+- Sysmon file creation
+- Sysmon DNS queries
+- Windows Security authentication events
+- Windows Security process creation events
+- PowerShell Script Block Logging
+
+These local telemetry sources establish the endpoint-side foundation for the centralized SIEM deployment planned for Phase 18.---
+
+## 10. Endpoint Security Telemetry Evidence
+
+Phase 17 also established the endpoint telemetry baseline required for subsequent SOC monitoring and SIEM integration.
+
+### Sysmon Configuration
+
+The Windows endpoint Sysmon configuration was backed up, applied, and verified.
+
+![Sysmon configuration backup](../../screenshots/Phase-17/08-sysmon-config-backup.png)
+
+![Sysmon configuration applied](../../screenshots/Phase-17/09-sysmon-configuration-applied.png)
+
+![Sysmon active configuration](../../screenshots/Phase-17/10-sysmon-active-configuration.png)
+
+### Sysmon Network and File Telemetry
+
+Sysmon network connection and file creation telemetry were validated on WIN11-CLIENT01.
+
+![Sysmon network connection](../../screenshots/Phase-17/11-sysmon-network-connect.png)
+
+![Sysmon file creation](../../screenshots/Phase-17/12-sysmon-file-create.png)
+
+### Sysmon DNS Telemetry
+
+DNS query telemetry was validated through Sysmon.
+
+![Sysmon DNS query](../../screenshots/Phase-17/13-sysmon-dns-query.png)
+
+### Windows Security Telemetry
+
+Windows Security event telemetry was validated for successful authentication, failed authentication, and process creation.
+
+![Windows Security Event ID 4624](../../screenshots/Phase-17/14-windows-security-4624.png)
+
+![Windows Security Event ID 4625](../../screenshots/Phase-17/15-security-4625.png)
+
+![Windows Security Event ID 4688](../../screenshots/Phase-17/16-security-4688.png)
+
+### PowerShell Telemetry
+
+PowerShell Script Block Logging telemetry was validated through Event ID 4104.
+
+![PowerShell Event ID 4104](../../screenshots/Phase-17/17-powershell-4104.png)
+
+### Telemetry Readiness
+
+The endpoint now provides the local security telemetry required for centralized SOC monitoring.
+
+The validated telemetry sources include:
+
+- Sysmon process creation
+- Sysmon network connections
+- Sysmon file creation
+- Sysmon DNS queries
+- Windows Security authentication events
+- Windows Security process creation events
+- PowerShell Script Block Logging
+
+These local telemetry sources establish the endpoint-side foundation for the centralized SIEM deployment planned for Phase 18.---
+
+## 10. Endpoint Security Telemetry Evidence
+
+Phase 17 also established the endpoint telemetry baseline required for subsequent SOC monitoring and SIEM integration.
+
+### Sysmon Configuration
+
+The Windows endpoint Sysmon configuration was backed up, applied, and verified.
+
+![Sysmon configuration backup](../../screenshots/Phase-17/08-sysmon-config-backup.png)
+
+![Sysmon configuration applied](../../screenshots/Phase-17/09-sysmon-configuration-applied.png)
+
+![Sysmon active configuration](../../screenshots/Phase-17/10-sysmon-active-configuration.png)
+
+### Sysmon Network and File Telemetry
+
+Sysmon network connection and file creation telemetry were validated on WIN11-CLIENT01.
+
+![Sysmon network connection](../../screenshots/Phase-17/11-sysmon-network-connect.png)
+
+![Sysmon file creation](../../screenshots/Phase-17/12-sysmon-file-create.png)
+
+### Sysmon DNS Telemetry
+
+DNS query telemetry was validated through Sysmon.
+
+![Sysmon DNS query](../../screenshots/Phase-17/13-sysmon-dns-query.png)
+
+### Windows Security Telemetry
+
+Windows Security event telemetry was validated for successful authentication, failed authentication, and process creation.
+
+![Windows Security Event ID 4624](../../screenshots/Phase-17/14-windows-security-4624.png)
+
+![Windows Security Event ID 4625](../../screenshots/Phase-17/15-security-4625.png)
+
+![Windows Security Event ID 4688](../../screenshots/Phase-17/16-security-4688.png)
+
+### PowerShell Telemetry
+
+PowerShell Script Block Logging telemetry was validated through Event ID 4104.
+
+![PowerShell Event ID 4104](../../screenshots/Phase-17/17-powershell-4104.png)
+
+### Telemetry Readiness
+
+The endpoint now provides the local security telemetry required for centralized SOC monitoring.
+
+The validated telemetry sources include:
+
+- Sysmon process creation
+- Sysmon network connections
+- Sysmon file creation
+- Sysmon DNS queries
+- Windows Security authentication events
+- Windows Security process creation events
+- PowerShell Script Block Logging
+
+These local telemetry sources establish the endpoint-side foundation for the centralized SIEM deployment planned for Phase 18.---
+
+## 10. Endpoint Security Telemetry Evidence
+
+Phase 17 also established the endpoint telemetry baseline required for subsequent SOC monitoring and SIEM integration.
+
+### Sysmon Configuration
+
+The Windows endpoint Sysmon configuration was backed up, applied, and verified.
+
+![Sysmon configuration backup](../../screenshots/Phase-17/08-sysmon-config-backup.png)
+
+![Sysmon configuration applied](../../screenshots/Phase-17/09-sysmon-configuration-applied.png)
+
+![Sysmon active configuration](../../screenshots/Phase-17/10-sysmon-active-configuration.png)
+
+### Sysmon Network and File Telemetry
+
+Sysmon network connection and file creation telemetry were validated on WIN11-CLIENT01.
+
+![Sysmon network connection](../../screenshots/Phase-17/11-sysmon-network-connect.png)
+
+![Sysmon file creation](../../screenshots/Phase-17/12-sysmon-file-create.png)
+
+### Sysmon DNS Telemetry
+
+DNS query telemetry was validated through Sysmon.
+
+![Sysmon DNS query](../../screenshots/Phase-17/13-sysmon-dns-query.png)
+
+### Windows Security Telemetry
+
+Windows Security event telemetry was validated for successful authentication, failed authentication, and process creation.
+
+![Windows Security Event ID 4624](../../screenshots/Phase-17/14-windows-security-4624.png)
+
+![Windows Security Event ID 4625](../../screenshots/Phase-17/15-security-4625.png)
+
+![Windows Security Event ID 4688](../../screenshots/Phase-17/16-security-4688.png)
+
+### PowerShell Telemetry
+
+PowerShell Script Block Logging telemetry was validated through Event ID 4104.
+
+![PowerShell Event ID 4104](../../screenshots/Phase-17/17-powershell-4104.png)
+
+### Telemetry Readiness
+
+The endpoint now provides the local security telemetry required for centralized SOC monitoring.
+
+The validated telemetry sources include:
+
+- Sysmon process creation
+- Sysmon network connections
+- Sysmon file creation
+- Sysmon DNS queries
+- Windows Security authentication events
+- Windows Security process creation events
+- PowerShell Script Block Logging
+
+These local telemetry sources establish the endpoint-side foundation for the centralized SIEM deployment planned for Phase 18.
 **Next Phase:** Phase 18 – Security Telemetry / Windows Logging
