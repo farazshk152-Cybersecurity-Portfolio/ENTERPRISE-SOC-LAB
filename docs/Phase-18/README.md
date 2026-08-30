@@ -1,62 +1,48 @@
-﻿# Phase 18 — Windows Telemetry Validation
+﻿# Phase 18 — Wazuh SIEM Deployment & Log Collection
 
-## Environment
+## Objective
 
-- Domain: enterprise.local
-- DC01: 192.168.10.10
-- WIN11-CLIENT01: 192.168.10.20
-- Host RAM: 15.92 GB
-- DC01 VM: 3072 MB RAM, 2 CPUs
-- WIN11-CLIENT01 VM: 3072 MB RAM, 2 CPUs
-- Kali VM: 2048 MB RAM, 2 CPUs, currently powered off
+Phase 18 validates the Wazuh SIEM pipeline from the Windows 11 endpoint through the Wazuh Agent and Manager to centralized event storage and Dashboard visibility.
 
-## Network Validation
+The phase covers:
 
-- DC01 → WIN11-CLIENT01: PASS
-- WIN11-CLIENT01 → DC01: PASS
-- WIN11 → DC01 TCP/445: PASS
-- DNS resolution of dc01.enterprise.local: PASS
+- Wazuh Manager health
+- Wazuh Agent connectivity
+- Sysmon telemetry
+- Windows Security telemetry
+- PowerShell telemetry
+- Wazuh EventChannel collection
+- Centralized Sysmon Event ID 11 ingestion
+- Wazuh rule and alert validation
+- Dashboard access
+- Configuration validation and cleanup
 
-## Sysmon Validation
+---
 
-- Sysmon64 service: Running / Automatic
-- Sysmon Operational log: Enabled
-- Sysmon Event ID 1 — Process Creation: PASS
-- Sysmon Event ID 3 — Network Connection: PASS
-- Sysmon Event ID 22 — DNS Query: PASS
+## Lab Architecture
 
-## Windows Security Validation
+| Component | Address / Identifier |
+|---|---|
+| Domain | `enterprise.local` |
+| DC01 | `192.168.10.10` |
+| WIN11-CLIENT01 | `192.168.10.20` |
+| Wazuh Server | `192.168.10.30` |
+| Wazuh Agent | Agent 002 |
+| Wazuh Version | `4.14.7` |
+| Sysmon | `15.21` |
+| Wazuh Server OS | Amazon Linux 2023 |
 
-- Security log: Enabled
-- Event ID 4624 — Successful Logon: Present
-- Event ID 4625 — Failed Logon: Present
-- Event ID 4688 — Process Creation: Present
+WIN11-CLIENT01 uses the enterprise network `192.168.10.0/24` and the Wazuh server is reachable at `192.168.10.30`.
 
-## PowerShell Validation
+---
 
-- PowerShell Operational log: Enabled
-- Event ID 4103: Present
-- Event ID 4104: Present
+## Wazuh Manager
 
-## Host Stability Baseline
+The Wazuh Manager was repaired after a malformed custom Sysmon decoder caused an analysis configuration failure.
 
-- Total RAM: 15.92 GB
-- Free RAM during latest check: 3.16 GB
-- CPU usage during latest check: 8.3%
-- DC01: Running
-- WIN11-CLIENT01: Running
-- Kali: Powered off
+The malformed decoder was preserved as a backup and removed from the active decoder path.
 
-## Stability Assessment
+The Wazuh analysis configuration was subsequently validated successfully using:
 
-The host has approximately 16 GB physical RAM. Running DC01 and WIN11-CLIENT01 together with Chrome, VS Code, and other host applications produces relatively high memory utilization.
-
-CPU usage is currently low, so CPU saturation is not indicated by the baseline.
-
-The current VM configuration should therefore remain unchanged while telemetry validation continues. Kali should remain powered off until additional testing requires it.
-
-## Phase 18 Result
-
-Telemetry validation is successful on WIN11-CLIENT01.
-
-The environment is ready to proceed to the next Phase 18 step.
+```bash
+sudo /var/ossec/bin/wazuh-analysisd -t
