@@ -39,7 +39,7 @@ Hostname:
 WAZUH01
 
 Operating System:
-Ubuntu Server
+Amazon Linux 2023
 
 Purpose:
 Centralized Log Collection

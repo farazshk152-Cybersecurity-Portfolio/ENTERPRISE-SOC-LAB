@@ -26,7 +26,7 @@ Design a secure and isolated enterprise network for attack simulation, detection
 
 ### WAZUH01
 
-- Ubuntu Server
+- Amazon Linux 2023
 - Wazuh Manager
 - Dashboard
 

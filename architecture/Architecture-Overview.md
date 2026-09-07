@@ -4,7 +4,7 @@ The Enterprise SOC Lab consists of four primary systems:
 
 - DC01 (Windows Server)
 - CLIENT01 (Windows 11)
-- WAZUH01 (Ubuntu Server)
+- WAZUH01 (Amazon Linux 2023)
 - KALI01 (Kali Linux)
 
 All systems communicate through an isolated VirtualBox internal network.
